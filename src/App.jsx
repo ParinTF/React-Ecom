@@ -1,9 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import { Button } from "@/components/ui/button";
+import AppRoutes from "./routes/AppRoutes";
 const App = () => {
   return (
-    <div></div>
-  )
-}
+    <>
+      <AppRoutes />
+    </>
+  );
+};
 
-export default App
+export default App;
