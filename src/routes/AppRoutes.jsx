@@ -7,26 +7,10 @@ import Login from "@/pages/Login";
 import Dashboard from "@/pages/admin/Dashboard";
 import Profile from "@/pages/admin/profile";
 import Settings from "@/pages/admin/Settings";
-
+import MainLayout from "../pages/layouts/MainLayout";
+import AdminLayout from "../pages/layouts/AdminLayout";
 // --- สร้างคอมโพเนนต์ทั้งหมดที่จำเป็น ---
 
-const MainLayout = () => (
-  <div>
-    <h1>Welcome to My App</h1>
-    <nav>{/* Main navigation links go here */}</nav>
-    <hr />
-    <Outlet /> {/* <-- จุดสำคัญสำหรับแสดงผลหน้าลูก */}
-  </div>
-);
-
-const AdminLayout = () => (
-  <div>
-    <h2>Admin Section</h2>
-    <nav>{/* Admin navigation links go here */}</nav>
-    <hr />
-    <Outlet /> {/* <-- Outlet สำหรับหน้า Admin */}
-  </div>
-);
 
 
 // --- ส่วนหลักของ Routes ---
